@@ -1,3 +1,4 @@
 # CI Test
 
-[![Build status](https://ci.appveyor.com/api/projects/status/unt9k2ov4j32dai6?svg=true)](https://ci.appveyor.com/project/slowpokiss/testing2)
+
+[![Build status](https://ci.appveyor.com/api/projects/status/ea6r2upv7syplram?svg=true)](https://ci.appveyor.com/project/slowpokiss/popover)
