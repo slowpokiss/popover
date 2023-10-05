@@ -29,9 +29,6 @@ class popover {
       "px";
     a.style.bottom =
       popParams.height + a.getBoundingClientRect().height + 10 + "px";
-
-    console.log(a.getBoundingClientRect());
-    console.log(this.popButton.getBoundingClientRect());
   }
 
   closeElem() {
@@ -39,7 +36,7 @@ class popover {
   }
 
   checkState() {
-    this.arrow = document.body.querySelector(".arrow")
+    this.arrow = document.body.querySelector(".arrow");
     if (document.body.contains(this.arrow)) {
       return true;
     } else {
