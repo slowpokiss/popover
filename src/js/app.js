@@ -1,11 +1,10 @@
 class popover {
   constructor() {
     this.popButton = document.querySelector(".btn");
-
     this.popButton.onclick = (ev) => {
       ev.preventDefault();
-      if (document.body.contains(document.body.querySelector(".arrow"))) {
-        document.body.removeChild(document.body.querySelector(".arrow"));
+      if (this.checkState()) {
+        this.closeElem();
       } else {
         this.showElem();
       }
@@ -33,6 +32,19 @@ class popover {
 
     console.log(a.getBoundingClientRect());
     console.log(this.popButton.getBoundingClientRect());
+  }
+
+  closeElem() {
+    document.body.removeChild(this.arrow);
+  }
+
+  checkState() {
+    this.arrow = document.body.querySelector(".arrow")
+    if (document.body.contains(this.arrow)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
